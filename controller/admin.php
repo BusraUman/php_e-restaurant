@@ -1,6 +1,12 @@
 <?php
 
 $usrObj = new User();
+$userCount = $usrObj->getAllUserCount();
+$order = new Order();
+$orderCount = $order->getAllOrdersCount();
+$menuObj = new Menu();
+$productCount = $menuObj->getAllProductCount();
+$categoryCount = $menuObj->getAllCategoriesCount();
 
 if ($usrObj->isLoggedIn() == "" ) {
     $usrObj->redirect('login.php');
@@ -14,7 +20,7 @@ if ($usrObj->isLoggedIn() == "" ) {
 }
 
 
-$menuObj = new Menu();
+
 $menu = $menuObj->getFullMenu();
 $categories = $menuObj->getAllCategories();
 
