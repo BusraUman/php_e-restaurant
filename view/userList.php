@@ -24,20 +24,6 @@
         </table>
     </div>
 
-    <div class="col-sm-6">
-        <form action="<?=$sitePath?>categoriTasks.php" method="post">
-            <h2>Yeni Kategori Ekle</h2>
-
-            <div class="input-group">
-                <input type="hidden" name="task" value="<?= $catTask ?>">
-                <?php echo $catPostIdInput; ?>
-                <input type="text" class="form-control" placeholder="Kategori ismini giriniz..."
-                       name="catName" <?= $catValue ?> />
-                <span class="input-group-btn">
-                    <input type="submit" class="btn btn-primary" name="submit">
-      </span>
-            </div>
-        </form>
-    </div>
+    
 
 </div>
